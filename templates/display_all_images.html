@@ -1,0 +1,6 @@
+{% if result != None %}
+{%for jj in result %}
+<a href="{{ url_for('delete', folder_name=jj) }}"><img width=200px;height=200px; src="data:image/png;base64,{{ jj }}"/></a>
+{{result.length}}
+{% endfor %}
+{% endif %}
